@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   // user authentication check
   const authenticateUser = async () => {
     try {
-      const response = await fetch("http://localhost:9000/api/auth/user", {
+      const response = await fetch("https://login-logout-backend-sts4.onrender.com/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ export const AuthProvider = ({ children }) => {
 const getAllUserData = async()=>{
 
   try {
-    const response = await fetch("http://localhost:9000/api/auth/all-users",{
+    const response = await fetch("https://login-logout-backend-sts4.onrender.com/api/auth/all-users",{
       method:"GET",
     })
     console.log(response);
