@@ -6,7 +6,7 @@ const authRoute = require("./router/auth-route");
 const connectDB = require("./utils/db");
 
 const corsOption = {
-  origin:"http://localhost:3000",
+  origin:"https://login-logout-frontend-part.onrender.com",
   methods:"GET, PUT, POST, PATCH, HEAD",
   credentials:true,
 }
