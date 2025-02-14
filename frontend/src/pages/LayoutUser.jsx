@@ -21,7 +21,7 @@ const LayoutUser = () => {
             </div>
           ))
         ) : (
-          <p>No users found.</p>
+          <p>Please log in to view user data....</p>
         )
       ) : (
         <p>Please log in to view user data....</p>
