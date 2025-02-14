@@ -3,7 +3,7 @@ import { useAuth } from "../stores/auth";
 
 const LayoutUser = () => {
   const allusers = useAuth();
-  const isloggedin  = useAuth();
+  const isLoggedin  = useAuth();
   console.log('from service page:',isloggedin)
   // console.log(allusers);
   // console.log(allusers.allusers)
@@ -11,7 +11,7 @@ const LayoutUser = () => {
   return (
     <div>
       <h2>Fetch Users Here and Perform CRUD Operations</h2>
-      {isloggedin ? (
+      {isLoggedin ? (
         allusers?.allusers?.length > 0 ? (
           allusers.allusers.map((curElem, index) => (
             <div key={index}>
