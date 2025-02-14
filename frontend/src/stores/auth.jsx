@@ -67,6 +67,7 @@ const getAllUserData = async()=>{
 }
 useEffect(()=>{
   if(isLoggedin){
+    console.log("login true and going to fetch all the user data");
     getAllUserData();
   }
 },[]);
