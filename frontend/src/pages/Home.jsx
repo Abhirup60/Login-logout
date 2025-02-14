@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <h1 className='text-4xl'>Home page</h1>
       {
-        user.user.username ? <p>Hello {user.user.username}</p> : (
+        user.user.username ? <p>Hello {user.user.username} and you are Admin:{user.user.isAdmin}</p> : (
           <>
              <p>username is fetching....</p>
           </>
