@@ -3,7 +3,7 @@ import { useAuth } from "../stores/auth";
 
 const LayoutUser = () => {
   const allusers = useAuth();
-  const { isloggedin } = useAuth();
+  const isloggedin  = useAuth();
   console.log('from service page:',isloggedin)
   // console.log(allusers);
   // console.log(allusers.allusers)
