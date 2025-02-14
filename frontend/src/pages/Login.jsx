@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../stores/auth";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import {  toast } from "react-toastify";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -54,7 +53,6 @@ const Login = () => {
   };
   return (
     <div>
-      <ToastContainer />
       <section>
         <main>
           <div className='login-section'>
