@@ -67,7 +67,7 @@ const getAllUserData = async()=>{
 }
 useEffect(()=>{
   getAllUserData();
-},[]);
+},[token]);
 // -------------------------- get all the users on service page ------------//
 
 
