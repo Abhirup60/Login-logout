@@ -11,6 +11,7 @@ export const AuthProvider = ({ children }) => {
 
   // set the token in LS
   const setTokenInLS = (serverToken) => {
+    setToken(serverToken);
     return localStorage.setItem("token", serverToken);
   };
 
