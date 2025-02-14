@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     authenticateUser();
-  }, [authenticateUser]);
+  }, []);
 
 // -------------------------- user authentication --------------------------//
 
