@@ -4,12 +4,12 @@ import { useAuth } from "../stores/auth";
 const LayoutUser = () => {
   const allusers = useAuth();
   const { isloggedin } = useAuth();
+  console.log('from service page:',isloggedin)
   // console.log(allusers);
   // console.log(allusers.allusers)
 
   return (
     <div>
-      Fetch User Here and do CURD Operation
       <h2>Fetch Users Here and Perform CRUD Operations</h2>
       {isloggedin ? (
         allusers?.allusers?.length > 0 ? (

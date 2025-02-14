@@ -57,7 +57,7 @@ const getAllUserData = async()=>{
     console.log(response);
     if(response.ok){
       const res = await response.json();
-      console.log("all users data : ",res.msg);
+      // console.log("all users data : ",res.msg);
       setAllusers(res.msg);
     }
   } catch (error) {
