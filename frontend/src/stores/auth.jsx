@@ -54,6 +54,9 @@ const getAllUserData = async()=>{
   try {
     const response = await fetch("https://login-logout-backend-sts4.onrender.com/api/auth/all-users",{
       method:"GET",
+      headers:{
+        Authorization:`Bearer ${token}`,
+      },
     })
     console.log(response);
     if(response.ok){
