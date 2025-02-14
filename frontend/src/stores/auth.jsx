@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
         },
       });
 
-      console.log(response);
+      // console.log(response);
       if (response.ok) {
         const res_data = await response.json();
         // console.log("auth-jsx userData :", res_data.userData);
