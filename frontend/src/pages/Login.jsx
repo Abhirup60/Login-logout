@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../stores/auth";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -44,7 +44,6 @@ const Login = () => {
         setTokenInLS(res_data.token);
 
         toast.success("Login successful");
-        <ToastContainer />
         setUser({ email: "", password: "" });
         navigate("/");
       }
@@ -54,6 +53,7 @@ const Login = () => {
   };
   return (
     <div>
+      <ToastContainer />
       <section>
         <main>
           <div className='login-section'>
